@@ -15,14 +15,13 @@
         "previewLimit": 50,
         "server": "localhost",
         "port": 5432,
-        "database": "postgres",
+        "database": "awesome_dash_db",
         "username": "postgres",
         "password": "postgres"
       }
     ],
     "remote.containers.dotfiles.repository": "https://github.com/ktcsz/dotfiles.git",
-    "remote.containers.dotfiles.installCommand": "~/dotfiles/install.sh",
-    "remote.containers.dotfiles.targetPath": "~/dotfiles",
+    "remote.containers.dotfiles.targetPath": "/workspace",
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
     },
