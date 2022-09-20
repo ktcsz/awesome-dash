@@ -21,6 +21,8 @@
       }
     ],
     "remote.containers.dotfiles.repository": "https://github.com/ktcsz/dotfiles.git",
+    "remote.containers.dotfiles.installCommand": "~/dotfiles/install.sh",
+    "remote.containers.dotfiles.targetPath": "~/dotfiles",
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
     },
