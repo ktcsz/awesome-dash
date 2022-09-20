@@ -2,11 +2,11 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/javascript-node-postgres
 // Update the VARIANT arg in docker-compose.yml to pick a Node.js version
 {
-	"name": "Node.js & PostgreSQL",
-	"dockerComposeFile": "docker-compose.yml",
-	"service": "app",
-	"workspaceFolder": "/workspace",
-	  // Set *default* container specific settings.json values on container create.
+  "name": "Node.js & PostgreSQL",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  // Set *default* container specific settings.json values on container create.
   "settings": {
     "sqltools.connections": [
       {
@@ -20,46 +20,47 @@
         "password": "postgres"
       }
     ],
+    "remote.containers.dotfiles.repository": "https://github.com/ktcsz/dotfiles.git",
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
     },
     "workbench.editor.titleScrollbarSizing": "large"
   },
 
-	// Configure tool-specific properties.
-	"customizations": {
-		// Configure properties specific to VS Code.
-		"vscode": {
-			// Add the IDs of extensions you want installed when the container is created.
-			"extensions": [
-				"dbaeumer.vscode-eslint",
-				"ms-azuretools.vscode-docker",
-				"formulahendry.auto-close-tag",
-				"formulahendry.auto-rename-tag",
-				"dsznajder.es7-react-js-snippets",
-				"vincaslt.highlight-matching-tag",
-				"fivethree.vscode-ionic-snippets",
-				"johnpapa.vscode-peacock",
-				"mtxr.sqltools",
-				"mtxr.sqltools-driver-pg",
-				"prisma.prisma",
-				"mutantdino.resourcemonitor",
-				"wix.vscode-import-cost",
-				"esbenp.prettier-vscode",
-				"eamodio.gitlens",
-				"github.vscode-pull-request-github",
-				"github.remotehub"
-			]
-		}
-	},
+  // Configure tool-specific properties.
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "ms-azuretools.vscode-docker",
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag",
+        "dsznajder.es7-react-js-snippets",
+        "vincaslt.highlight-matching-tag",
+        "fivethree.vscode-ionic-snippets",
+        "johnpapa.vscode-peacock",
+        "mtxr.sqltools",
+        "mtxr.sqltools-driver-pg",
+        "prisma.prisma",
+        "mutantdino.resourcemonitor",
+        "wix.vscode-import-cost",
+        "esbenp.prettier-vscode",
+        "eamodio.gitlens",
+        "github.vscode-pull-request-github",
+        "github.remotehub"
+      ]
+    }
+  },
 
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// This can be used to network with other containers or with the host.
-	// "forwardPorts": [3000, 5432],
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // This can be used to network with other containers or with the host.
+  // "forwardPorts": [3000, 5432],
 
-	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "npm install",
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "npm install",
 
-	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "node"
+  // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+  "remoteUser": "node"
 }
