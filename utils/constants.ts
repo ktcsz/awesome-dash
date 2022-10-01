@@ -1,0 +1,1 @@
+export const DISABLED_PROFILE_TEXT = "You must sign in to view your profile"
